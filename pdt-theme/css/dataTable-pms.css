@@ -1,0 +1,9 @@
+.dataTables_length{
+	padding-bottom: 5px;
+}
+.dataTables_length select{
+	width: 53px;
+}
+#tableDataTable th{
+	background-color: white;
+}

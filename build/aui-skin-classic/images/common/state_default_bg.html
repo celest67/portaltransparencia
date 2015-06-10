@@ -1,0 +1,171 @@
+<html>
+
+	<head>
+
+		<style>
+
+			body{
+
+				font:13px Verdana, Arial;
+
+				background-color:#EAECF2;
+
+			}
+
+		
+
+			#wrapper{
+
+				margin:auto;
+
+				margin-top:50px;
+
+				width:960;
+
+				border:1px solid #CCC;
+
+				background-color:#FFF;
+
+				padding:20px;
+
+			}
+
+			
+
+			#message{
+
+				margin-top:30px;
+
+			}
+
+			
+
+			#footer{
+
+				margin-top:70px;
+
+			}
+
+		
+
+			a.underlined:link, a.underlined:hover, a.underlined:active, a.underlined:visited{
+
+				text-decoration:underline;
+
+			}
+
+			
+
+			a.yellow:link, a.yellow:hover, a.yellow:active, a.yellow:visited{
+
+				background-color:yellow;
+
+				color:#000;
+
+			}
+
+			
+
+			.bold{
+
+				font-weight:bold;
+
+			}
+
+			
+
+			a:link, a:hover, a:active, a:visited{
+
+				text-decoration:none;
+
+				cursor:pointer;
+
+				color:blue;
+
+			}
+
+		</style>
+
+		<script>
+
+			window.onload = function(){
+
+				var currentdate = new Date();
+
+				var hour = getDigits(currentdate.getHours()+"");
+
+				var minutes = getDigits(currentdate.getMinutes()+"");
+
+				var seconds = getDigits(currentdate.getSeconds()+""); 
+
+				var day = getDigits(currentdate.getDate()+""); 
+
+				var month = getDigits((currentdate.getMonth()+1)+""); 
+
+				var date = day + "/" + month  + "/" + currentdate.getFullYear();
+
+				var time =  hour + ":" + minutes + ":" + seconds;
+
+				document.getElementById('time').innerHTML = time;
+
+				document.getElementById('date').innerHTML = date;
+
+			}
+
+
+
+			function getDigits(value){
+
+				if(value.length == 1){
+
+					value = "0" + value;
+
+				}
+
+
+
+				return value;
+
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+
+			<div id="logo">
+
+				<img src="/error/PdT/logo.png" alt="Portal de Transparencia" />
+
+			</div>
+
+			<div id="message">
+
+				<p>Estimado(a) usuario(a)</p>
+
+				<p>El recurso solicitado no est&aacute; disponible.</p>
+
+				<p>Si cree que se trata de un error le rogamos se ponga en contacto con la Mesa de Ayuda del Portal para la Transparencia llamando al 800 361 012 o a trav&eacute;s del mail a <a title="Enviar email" href="mailto:soporte@portaltransparencia.cl">soporte@portaltransparencia.cl</a></p>
+
+				<p>Agradeceremos disculpe los inconvenientes,</p>
+
+			</div>
+
+			<div id="footer">
+
+				<p>Atte.<br />Portal de Transparencia</p>
+
+				<p>Hora: <span id="time"></span><br />Fecha: <span id="date"></span></p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+
+
+</html>
