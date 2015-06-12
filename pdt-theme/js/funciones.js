@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //$('#tableDataTable').addClass("stripe hover dataTable no-footer");
     $('#tableDataTable').dataTable({
         "oLanguage": {
             "sProcessing": "Procesando...",
@@ -25,6 +26,5 @@ $(document).ready(function () {
             }
         }
     });
-    $('#tableDataTable').addClass("stripe hover dataTable no-footer");
     $(".ui-paginator").hide();
 });
