@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //$('#tableDataTable').addClass("stripe hover dataTable no-footer");
+    $('#tableDataTable').addClass("stripe hover");
     $('#tableDataTable').dataTable({
         "oLanguage": {
             "sProcessing": "Procesando...",
