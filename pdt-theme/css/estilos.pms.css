@@ -18,7 +18,14 @@
 
 a:visited {
     color: initial !important;
-    text-decoration:initial !important;
+    text-decoration: initial !important;
+}
+
+.menutab li {
+    background:#eee;
+  border-radius: 4px 4px 0 0;
+  padding: 4px 8px 0;
+  box-shadow: 2px -2px 4px -2px #888888;
 }
 
 /* General styles for all menus */
