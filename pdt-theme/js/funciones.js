@@ -31,4 +31,18 @@ $(document).ready(function () {
         var href = $('.ui-menuitem-link.ui-corner-all.ui-icon.ui-icon-home').attr('href');
         window.location.href = href;
     });
+
+    $jq("#menu-accordion").accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: "content",
+        icons: null,
+        header: "h4"
+    });
+    
+    $('#showLeft').click(function(e){
+        $('#cbp-spmenu-s1').toggleClass('cbp-spmenu-open');
+        $('body').toggleClass('cbp-spmenu-push-toright');
+        e.preventDefault();
+    });
 });
