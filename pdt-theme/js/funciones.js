@@ -27,4 +27,8 @@ $(document).ready(function () {
         }
     });
     $(".ui-paginator").hide();
+    $('#Logoz').click(function () {
+        var href = $('.ui-menuitem-link.ui-corner-all.ui-icon.ui-icon-home').attr('href');
+        window.location.href = href;
+    });
 });
