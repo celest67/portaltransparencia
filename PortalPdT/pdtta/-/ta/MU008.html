@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="ltr" dir="ltr" lang="es-ES">
     <head profile="http://www.w3.org/2005/10/profile">
@@ -90,6 +90,16 @@ var $jq = jQuery.noConflict(true);
                     margin:0px;
                     border: 0px;
                     font-weight: normal;
+                }
+
+                .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+                        color: #000000;
+                        background: #ffffff;
+                        padding: 0px;
+                        margin: 0px;
+                        border: 0px;
+                        font-weight: normal;
+                        text-decoration:underline;
                 }
 
         </style>
@@ -304,8 +314,10 @@ var $jq = jQuery.noConflict(true);
                                                                 <div id="escritorio_ta_content">
                                                                     <div id="A2248:form:j_idt24" class="ui-outputpanel ui-widget">
                                                                         <hr id="A2248:form:j_idt25" class="ui-separator ui-state-default ui-corner-all">
+                                                                        <div id="buscadorAutocomplete">
                                                                         <label for="search">Buscar: </label>
                                                                         <input id="menu-search-autocomplete">
+                                                                            </div>
                                                                         <div id="menu-accordion">
                                                                             <h4>
                                                                                 01. Actos y documentos publicados en Diario Oficial
