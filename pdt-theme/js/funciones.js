@@ -63,7 +63,7 @@ $(document).ready(function () {
             li = that._renderItemData( ul, item );
             if ( item.category ) {
               li.attr( "aria-label", item.category + " : " + item.label );
-            }
+            }            
           });
         }
     });
@@ -80,7 +80,8 @@ $(document).ready(function () {
                 function(){                 
                     autoCompleteValues.push({
                         "label": $jq.trim($jq(this).text()),
-                        "category": newCategory
+                        "category": newCategory,
+                        "href": $jq(this).attr('href')
                     });
                 }
             );
@@ -89,6 +90,9 @@ $(document).ready(function () {
 
     $jq("#menu-search-autocomplete").catcomplete({
       delay: 0,
-      source: autoCompleteValues
+      source: autoCompleteValues,
+      select: function( event, ui ) {
+        window.location = ui.item.href
+      }
     });
 });
