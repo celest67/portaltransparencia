@@ -62,6 +62,37 @@ var $jq = jQuery.noConflict(true);
         <script type="text/javascript">
 /*<![CDATA[*/var locationStr=window.location.href;if(locationStr.indexOf("p_p_id=115")!=-1&&locationStr.indexOf("/home?")!=-1&&locationStr.indexOf("p_p_state=normal")!=-1){locationStr=locationStr.replace(/p_p_state%3Dnormal/g,"p_p_state%3Dmaximized");locationStr=locationStr.replace(/p_p_state=normal/g,"p_p_state=maximized");window.location=locationStr};/*]]>*/
         </script>
+        <style type="text/css">
+            .ui-autocomplete-category {
+                font-weight: bold;
+                padding: .2em .4em;
+                margin: .8em 0 .2em;
+                line-height: 1.5;
+            }
+
+            .ui-autocomplete {
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                background: #ffffff;
+                color: #000000;
+            }
+
+                .ui-autocomplete a {
+                    color: #000000;
+                }
+
+                .ui-autocomplete a:hover,.ui-autocomplete a:active {
+                    color: #000000;
+                    background: #ffffff;
+                    padding: 0px;
+                    margin:0px;
+                    border: 0px;
+                    font-weight: normal;
+                }
+
+        </style>
     </head>
     <body class=" yui3-skin-sam controls-visible guest-site signed-out public-page site">
         <div id="wrapper">
@@ -273,6 +304,8 @@ var $jq = jQuery.noConflict(true);
                                                                 <div id="escritorio_ta_content">
                                                                     <div id="A2248:form:j_idt24" class="ui-outputpanel ui-widget">
                                                                         <hr id="A2248:form:j_idt25" class="ui-separator ui-state-default ui-corner-all">
+                                                                        <label for="search">Buscar: </label>
+                                                                        <input id="menu-search-autocomplete">
                                                                         <div id="menu-accordion">
                                                                             <h4>
                                                                                 01. Actos y documentos publicados en Diario Oficial
